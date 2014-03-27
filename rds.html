@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Effective April 2014</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style type="text/css">
+      body {
+        padding: 5px 20px;
+        background: #fafafa;
+      }
+      div#wrap {
+        margin: auto;
+        max-width: 1000px;
+      }
+      header {
+        padding: 0 15px 0;
+      }
+      div#content {
+        padding: 10px;
+        background: #fff;
+      }
+      table caption {
+        font-weight: bold;
+      }
+      table thead tr td {
+        vertical-align: middle;
+        text-align: center;
+      }
+      table tbody tr td {
+        font-family: monospace;
+        text-align: center;
+      }
+      table tbody tr td:first-child {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://github.com/yoloseem/aws-april-2014-pricing"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/e7bbb0521b397edbd5fe43e7f760759336b5e05f/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f677265656e5f3030373230302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_green_007200.png"></a>
+    <div id="wrap">
+      <header>
+        <h2>Amazon RDS Pricing Changes Effective April 1, 2014</h2>
+        <h3>Asia Pacific(Tokyo)</h3>
+      </header>
+      <ul class="nav nav-tabs nav-justified">
+        <li><a href="/index.html">EC2</a></li>
+        <li class="active"><a href="#">RDS</a></li>
+        <li><a href="/elasticache.html">ElastiCache</a></li>
+      </ul>
+      <div id="content">
+        <table class="table table-striped">
+          <caption>PostgreSQL, Multi-AZ DB Instance Class (On-Demand)</caption>
+          <thead>
+            <tr>
+              <td></td>
+              <td>vCPU</td>
+              <td>ECU</td>
+              <td>Memory (GiB)</td>
+              <td>PIOPS-Optimized</td>
+              <td>Network Performance</td>
+              <td>Current Pricing (per Hour)</td>
+              <td>Lowered Pricing</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="8">
+                <span class="glyphicon glyphicon-cloud"></span>
+                Standard - Second Generation
+              </td>
+            </tr>
+            <tr>
+              <td>m3.medium</td>
+              <td>1</td>
+              <td>3</td>
+              <td>3.75</td>
+              <td>-</td>
+              <td>Moderate</td>
+              <td class="current">
+                <span class="dollars">$0.430</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.250</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  41.86%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>m3.large</td>
+              <td>2</td>
+              <td>6.5</td>
+              <td>7.5</td>
+              <td>-</td>
+              <td>Moderate</td>
+              <td class="current">
+                <span class="dollars">$0.864</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.500</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  42.12%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>m3.xlarge</td>
+              <td>4</td>
+              <td>13</td>
+              <td>15</td>
+              <td>Yes</td>
+              <td>High</td>
+              <td class="current">
+                <span class="dollars">$1.728</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$1.005</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  41.84%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>m3.2xlarge</td>
+              <td>8</td>
+              <td>26</td>
+              <td>30</td>
+              <td>Yes</td>
+              <td>High</td>
+              <td class="current">
+                <span class="dollars">$3.444</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$2.000</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  41.92%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="7">
+                <span class="glyphicon glyphicon-cloud"></span>
+                Standard - First Generation
+              </td>
+            </tr>
+            <tr>
+              <td>m1.small</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1.7</td>
+              <td>-</td>
+              <td>Low</td>
+              <td class="current">
+                <span class="dollars">$0.224</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.150</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  30.03%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>m1.medium</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3.75</td>
+              <td>-</td>
+              <td>Moderate</td>
+              <td class="current">
+                <span class="dollars">$0.446</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.305</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  31.61%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>m1.large</td>
+              <td>2</td>
+              <td>4</td>
+              <td>7.5</td>
+              <td>Yes</td>
+              <td>Moderate</td>
+              <td class="current">
+                <span class="dollars">$0.892</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.605</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  32.17%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>m1.xlarge</td>
+              <td>4</td>
+              <td>8</td>
+              <td>15</td>
+              <td>Yes</td>
+              <td>High</td>
+              <td class="current">
+                <span class="dollars">$1.784</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$1.215</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  31.89%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="8">
+                <span class="glyphicon glyphicon-cloud"></span>
+                Memory optimized
+              </td>
+            </tr>
+            <tr>
+              <td>m2.xlarge</td>
+              <td>2</td>
+              <td>6.5</td>
+              <td>17.1</td>
+              <td>-</td>
+              <td>Moderate</td>
+              <td class="current">
+                <span class="dollars">$1.358</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.805</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  40.72%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>m2.2xlarge</td>
+              <td>4</td>
+              <td>13</td>
+              <td>34.2</td>
+              <td>Yes</td>
+              <td>Moderate</td>
+              <td class="current">
+                <span class="dollars">$2.704</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$1.600</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  40.82%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>m2.4xlarge</td>
+              <td>8</td>
+              <td>26</td>
+              <td>68.4</td>
+              <td>Yes</td>
+              <td>High</td>
+              <td class="current">
+                <span class="dollars">$5.420</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$3.205</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  40.86%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>cr1.8xl</td>
+              <td>32</td>
+              <td>88</td>
+              <td>244</td>
+              <td>-</td>
+              <td>10 Gigabit</td>
+              <td class="current">
+                <span class="dollars">$11.560</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$11.010</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  4.75%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="8">
+                <span class="glyphicon glyphicon-cloud"></span>
+                Micro Instances
+              </td>
+            </tr>
+            <tr>
+              <td>t1.micro</td>
+              <td>1</td>
+              <td>Variable</td>
+              <td>0.615</td>
+              <td>-</td>
+              <td>Very Low</td>
+              <td class="current">
+                <span class="dollars">$0.073</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.080</span>
+                <span class="label label-default">
+                  <span class="glyphicon glyphicon-arrow-up"></span>
+                  9.59%
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="sources">
+          <div>Sources:</div>
+          <ul>
+            <li><a href="http://aws.amazon.com/rds/pricing/">
+              http://aws.amazon.com/rds/pricing/</a></li>
+            <li><a href="http://aws.amazon.com/rds/pricing/effective-april-2014/">
+              http://aws.amazon.com/rds/pricing/effective-april-2014/</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

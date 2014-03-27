@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Effective April 2014</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style type="text/css">
+      body {
+        padding: 5px 20px;
+        background: #fafafa;
+      }
+      div#wrap {
+        margin: auto;
+        max-width: 1000px;
+      }
+      header {
+        padding: 0 15px 0;
+      }
+      div#content {
+        padding: 10px;
+        background: #fff;
+      }
+      table caption {
+        font-weight: bold;
+      }
+      table thead tr td {
+        vertical-align: middle;
+        text-align: center;
+      }
+      table tbody tr td {
+        font-family: monospace;
+        text-align: center;
+      }
+      table tbody tr td:first-child {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://github.com/yoloseem/aws-april-2014-pricing"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
+    <div id="wrap">
+      <header>
+        <h2>Amazon EC2 Pricing Changes Effective April 1, 2014</h2>
+        <h3>Asia Pacific(Tokyo)</h3>
+      </header>
+      <ul class="nav nav-tabs nav-justified">
+        <li class="active"><a href="#">EC2</a></li>
+        <li><a href="/rds.html">RDS</a></li>
+        <li><a href="/elasticache.html">ElastiCache</a></li>
+      </ul>
+      <div id="content">
+        <table class="table table-striped">
+          <caption>On-Demand Instances</caption>
+          <thead>
+            <tr>
+              <td></td>
+              <td>vCPU</td>
+              <td>ECU</td>
+              <td>Memory (GiB)</td>
+              <td>Instance Storage (GB)</td>
+              <td>Current Pricing (per Hour)</td>
+              <td>Lowered Pricing</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td colspan="7">
+                <span class="glyphicon glyphicon-cloud"></span>
+                General Purpose - Current Generation
+              </td>
+            </tr>
+            <tr>
+              <td>m3.medium</td>
+              <td>1</td>
+              <td>3</td>
+              <td>3.75</td>
+              <td>1 x 4 SSD</td>
+              <td class="current">
+                <span class="dollars">$0.171</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.101</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  40.93%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>m3.large</td>
+              <td>2</td>
+              <td>6.5</td>
+              <td>7.5</td>
+              <td>1 x 32 SSD</td>
+              <td class="current">
+                <span class="dollars">$0.342</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.203</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  40.64%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>m3.xlarge</td>
+              <td>4</td>
+              <td>13</td>
+              <td>15</td>
+              <td>2 x 40 SSD</td>
+              <td class="current">
+                <span class="dollars">$0.684</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.405</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  40.78%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>m3.2xlarge</td>
+              <td>8</td>
+              <td>26</td>
+              <td>30</td>
+              <td>2 x 80 SSD</td>
+              <td class="current">
+                <span class="dollars">$1.368</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.810</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  40.78%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="7">
+                <span class="glyphicon glyphicon-cloud"></span>
+                General Purpose - Previous Generation
+              </td>
+            </tr>
+            <tr>
+              <td>m1.small</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1.7</td>
+              <td>1 x 160</td>
+              <td class="current">
+                <span class="dollars">$0.088</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.061</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  30.68%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>m1.medium</td>
+              <td>1</td>
+              <td>2</td>
+              <td>3.75</td>
+              <td>1 x 410</td>
+              <td class="current">
+                <span class="dollars">$0.175</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.122</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  30.28%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>m1.large</td>
+              <td>2</td>
+              <td>4</td>
+              <td>7.5</td>
+              <td>2 x 420</td>
+              <td class="current">
+                <span class="dollars">$0.350</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.243</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  30.57%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>m1.xlarge</td>
+              <td>4</td>
+              <td>8</td>
+              <td>15</td>
+              <td>4 x 420</td>
+              <td class="current">
+                <span class="dollars">$0.700</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.486</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  30.57%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="7">
+                <span class="glyphicon glyphicon-cloud"></span>
+                Compute Optimized - Current Generation
+              </td>
+            </tr>
+            <tr>
+              <td>c3.large</td>
+              <td>2</td>
+              <td>7</td>
+              <td>3.75</td>
+              <td>2 x 16 SSD</td>
+              <td class="current">
+                <span class="dollars">$0.192</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.128</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  33.33%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>c3.xlarge</td>
+              <td>4</td>
+              <td>14</td>
+              <td>7.5</td>
+              <td>2 x 40 SSD</td>
+              <td class="current">
+                <span class="dollars">$0.383</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.255</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  33.42%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>c3.2xlarge</td>
+              <td>8</td>
+              <td>28</td>
+              <td>15</td>
+              <td>2 x 80 SSD</td>
+              <td class="current">
+                <span class="dollars">$0.766</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.511</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  33.28%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>c3.4xlarge</td>
+              <td>16</td>
+              <td>55</td>
+              <td>30</td>
+              <td>2 x 160 SSD</td>
+              <td class="current">
+                <span class="dollars">$1.532</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$1.021</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  33.35%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>c3.8xlarge</td>
+              <td>32</td>
+              <td>108</td>
+              <td>60</td>
+              <td>2 x 320 SSD</td>
+              <td class="current">
+                <span class="dollars">$3.064</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$2.043</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  33.32%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="7">
+                <span class="glyphicon glyphicon-cloud"></span>
+                Compute Optimized - Preivous Generation
+              </td>
+            </tr>
+            <tr>
+              <td>c1.medium</td>
+              <td>2</td>
+              <td>5</td>
+              <td>1.7</td>
+              <td>1 x 350 SSD</td>
+              <td class="current">
+                <span class="dollars">$0.185</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.158</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  14.59%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>c1.xlarge</td>
+              <td>8</td>
+              <td>20</td>
+              <td>7</td>
+              <td>4 x 420 SSD</td>
+              <td class="current">
+                <span class="dollars">$0.740</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.632</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  14.59%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>cc2.8xlarge</td>
+              <td>32</td>
+              <td>88</td>
+              <td>60.5</td>
+              <td>4 x 840 SSD</td>
+              <td class="current">
+                <span class="dollars">$3.064</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$2.350</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  23.30%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="7">
+                <span class="glyphicon glyphicon-cloud"></span>
+                GPU Instances - Current Generation
+              </td>
+            </tr>
+            <tr>
+              <td>g2.2xlarge</td>
+              <td>8</td>
+              <td>26</td>
+              <td>15</td>
+              <td>60 SSD</td>
+              <td class="current">
+                <span class="dollars">$0.943</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.898</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  4.77%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="7">
+                <span class="glyphicon glyphicon-cloud"></span>
+                Memory Optimized - Current Generation
+              </td>
+            </tr>
+            <tr>
+              <td>m2.xlarge</td>
+              <td>2</td>
+              <td>6.5</td>
+              <td>17.1</td>
+              <td>1 x 420</td>
+              <td class="current">
+                <span class="dollars">$0.505</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.287</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  43.16%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>m2.2xlarge</td>
+              <td>4</td>
+              <td>13</td>
+              <td>34.2</td>
+              <td>1 x 850</td>
+              <td class="current">
+                <span class="dollars">$1.010</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.575</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  43.06%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>m2.4xlarge</td>
+              <td>8</td>
+              <td>26</td>
+              <td>68.4</td>
+              <td>2 x 840</td>
+              <td class="current">
+                <span class="dollars">$2.020</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$1.150</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  43.06%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>cr1.8xlarge</td>
+              <td>32</td>
+              <td>88</td>
+              <td>244</td>
+              <td>2 x 120 SSD</td>
+              <td class="current">
+                <span class="dollars">$4.310</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$4.105</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  4.75%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="7">
+                <span class="glyphicon glyphicon-cloud"></span>
+                Storage Optimized - Current Generation
+              </td>
+            </tr>
+            <tr>
+              <td>i2.xlarge</td>
+              <td>4</td>
+              <td>14</td>
+              <td>30.5</td>
+              <td>1 x 800 SSD</td>
+              <td class="current">
+                <span class="dollars">$1.051</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$1.001</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  4.75%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>i2.2xlarge</td>
+              <td>8</td>
+              <td>27</td>
+              <td>61</td>
+              <td>2 x 800 SSD</td>
+              <td class="current">
+                <span class="dollars">$2.101</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$2.001</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  4.75%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>i2.4xlarge</td>
+              <td>16</td>
+              <td>53</td>
+              <td>122</td>
+              <td>4 x 800 SSD</td>
+              <td class="current">
+                <span class="dollars">$4.202</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$4.002</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  4.75%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>i2.8xlarge</td>
+              <td>32</td>
+              <td>104</td>
+              <td>244</td>
+              <td>8 x 800 SSD</td>
+              <td class="current">
+                <span class="dollars">$4.404</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$8.004</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  4.75%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td>hs1.8xlarge</td>
+              <td>16</td>
+              <td>35</td>
+              <td>117</td>
+              <td>24 x 2048</td>
+              <td class="current">
+                <span class="dollars">$5.670</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$5.400</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  4.76%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="7">
+                <span class="glyphicon glyphicon-cloud"></span>
+                Storage Optimized - Previous Generation
+              </td>
+            </tr>
+            <tr>
+              <td>hi1.4xlarge</td>
+              <td>16</td>
+              <td>35</td>
+              <td>60.5</td>
+              <td>2 x 1024 SSD</td>
+              <td class="current">
+                <span class="dollars">$3.440</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$3.276</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  4.76%
+                </span>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="7">
+                <span class="glyphicon glyphicon-cloud"></span>
+                Micro Instances
+              </td>
+            </tr>
+            <tr>
+              <td>t1.micro</td>
+              <td>1</td>
+              <td>Variable</td>
+              <td>0.615</td>
+              <td>EBS Only</td>
+              <td class="current">
+                <span class="dollars">$0.027</span>
+              </td>
+              <td class="effective">
+                <span class="dollars">$0.026</span>
+                <span class="label label-danger">
+                  <span class="glyphicon glyphicon-arrow-down"></span>
+                  3.70%
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div id="sources">
+          <div>Sources:</div>
+          <ul>
+            <li><a href="http://aws.amazon.com/ec2/pricing/">
+              http://aws.amazon.com/ec2/pricing/</a></li>
+            <li><a href="http://aws.amazon.com/ec2/pricing/effective-april-2014/">
+              http://aws.amazon.com/ec2/pricing/effective-april-2014/</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
